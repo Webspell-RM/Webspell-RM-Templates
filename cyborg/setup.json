@@ -1,0 +1,51 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "cyborg/install.php",
+				"file2": "cyborg/index.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates",
+				"file1": "cyborg/templates/checklogin.html",
+				"file2": "cyborg/templates/contact.html",
+				"file3": "cyborg/templates/error_404.html",
+				"file4": "cyborg/templates/favicon.ico",
+				"file5": "cyborg/templates/imprint.html",
+				"file6": "cyborg/templates/logged.html",
+				"file7": "cyborg/templates/login.html",
+				"file8": "cyborg/templates/loginoverview.html",
+				"file9": "cyborg/templates/lostpassword.html",
+				"file10": "cyborg/templates/myprofile.html",
+				"file11": "cyborg/templates/navigation.html",
+				"file12": "cyborg/templates/navigation_login.php",
+				"file13": "cyborg/templates/privacy_policy.html",
+				"file14": "cyborg/templates/profile.html",
+				"file15": "cyborg/templates/register.html",
+				"file16": "cyborg/templates/startpage.html",
+				"file17": "cyborg/templates/static.html"
+			},
+			{
+				"index": "css",
+				"file1": "cyborg/css/stylesheet.css"
+			},
+			{
+				"index": "images",
+				"file1": "cyborg/images/logo.png",
+				"file2": "cyborg/images/cyborg.jpg",
+				"file3": "cyborg/images/login_bg.jpg",
+				"file4": "cyborg/images/eye.svg",
+				"file5": "cyborg/images/logo-signup.png",
+				"file6": "cyborg/images/no_background.png"
+			},
+			{
+				"index": "js"
+			}
+		]
+}

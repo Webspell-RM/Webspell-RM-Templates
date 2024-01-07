@@ -1,0 +1,28 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "cyborg/update.php",
+				"file2": "cyborg/install.php",
+				"file3": "cyborg/index.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates"
+			},
+			{
+				"index": "css"
+			},
+			{
+				"index": "images"
+			},
+			{
+				"index": "js"
+			}
+		]
+}
