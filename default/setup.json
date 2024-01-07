@@ -1,0 +1,51 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "default/install.php",
+				"file2": "default/index.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates",
+				"file1": "default/templates/checklogin.html",
+				"file2": "default/templates/contact.html",
+				"file3": "default/templates/error_404.html",
+				"file4": "default/templates/favicon.ico",
+				"file5": "default/templates/imprint.html",
+				"file6": "default/templates/logged.html",
+				"file7": "default/templates/login.html",
+				"file8": "default/templates/loginoverview.html",
+				"file9": "default/templates/lostpassword.html",
+				"file10": "default/templates/myprofile.html",
+				"file11": "default/templates/navigation.html",
+				"file12": "default/templates/navigation_login.php",
+				"file13": "default/templates/privacy_policy.html",
+				"file14": "default/templates/profile.html",
+				"file15": "default/templates/register.html",
+				"file16": "default/templates/startpage.html",
+				"file17": "default/templates/static.html"
+			},
+			{
+				"index": "css",
+				"file1": "default/css/stylesheet.css"
+			},
+			{
+				"index": "images",
+				"file1": "default/images/logo.png",
+				"file2": "default/images/default.jpg",
+				"file3": "default/images/login_bg.jpg",
+				"file4": "default/images/eye.svg",
+				"file5": "default/images/logo-signup.png",
+				"file6": "default/images/no_background.png"
+			},
+			{
+				"index": "js"
+			}
+		]
+}

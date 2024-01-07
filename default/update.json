@@ -1,0 +1,27 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "default/update.php",
+				"file2": "default/install.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates"
+			},
+			{
+				"index": "css"
+			},
+			{
+				"index": "images"
+			},
+			{
+				"index": "js"
+			}
+		]
+}

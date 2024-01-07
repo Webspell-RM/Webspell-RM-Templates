@@ -1,0 +1,6 @@
+/* Main Layout */
+.logo .bg-primary {
+background-color: transparent !important;
+}
+
+.head-h2 {font-size: 18px;}
