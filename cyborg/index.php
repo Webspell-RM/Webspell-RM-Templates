@@ -199,5 +199,8 @@ header('X-UA-Compatible: IE=edge,chrome=1');
     <script defer src="../components/cookies/js/cookieconsent-init.js"></script>
     <script defer src="../components/cookies/js/app.js"></script>
 
+    <!-- Language recognition for DataTables -->
+    <? echo "<script>const LangDataTables = '$_language->language';</script>"; ?>
+
 </body>
 </html>
