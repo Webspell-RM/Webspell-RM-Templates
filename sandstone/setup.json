@@ -1,0 +1,52 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "sandstone/install.php",
+				"file2": "sandstone/uninstall.php",
+				"file3": "sandstone/index.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates",
+				"file1": "sandstone/templates/checklogin.html",
+				"file2": "sandstone/templates/contact.html",
+				"file3": "sandstone/templates/error_404.html",
+				"file4": "sandstone/templates/favicon.ico",
+				"file5": "sandstone/templates/imprint.html",
+				"file6": "sandstone/templates/logged.html",
+				"file7": "sandstone/templates/login.html",
+				"file8": "sandstone/templates/loginoverview.html",
+				"file9": "sandstone/templates/lostpassword.html",
+				"file10": "sandstone/templates/myprofile.html",
+				"file11": "sandstone/templates/navigation.html",
+				"file12": "sandstone/templates/navigation_login.php",
+				"file13": "sandstone/templates/privacy_policy.html",
+				"file14": "sandstone/templates/profile.html",
+				"file15": "sandstone/templates/register.html",
+				"file16": "sandstone/templates/startpage.html",
+				"file17": "sandstone/templates/static.html"
+			},
+			{
+				"index": "css",
+				"file1": "sandstone/css/stylesheet.css"
+			},
+			{
+				"index": "images",
+				"file1": "sandstone/images/logo.png",
+				"file2": "sandstone/images/sandstone.jpg",
+				"file3": "sandstone/images/login_bg.jpg",
+				"file4": "sandstone/images/eye.svg",
+				"file5": "sandstone/images/logo-signup.png",
+				"file6": "sandstone/images/no_background.png"
+			},
+			{
+				"index": "js"
+			}
+		]
+}
