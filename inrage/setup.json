@@ -1,0 +1,51 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "inrage/install.php",
+				"file2": "inrage/index.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates",
+				"file1": "inrage/templates/checklogin.html",
+				"file2": "inrage/templates/contact.html",
+				"file3": "inrage/templates/error_404.html",
+				"file4": "inrage/templates/favicon.ico",
+				"file5": "inrage/templates/imprint.html",
+				"file6": "inrage/templates/logged.html",
+				"file7": "inrage/templates/login.html",
+				"file8": "inrage/templates/loginoverview.html",
+				"file9": "inrage/templates/lostpassword.html",
+				"file10": "inrage/templates/myprofile.html",
+				"file11": "inrage/templates/navigation.html",
+				"file12": "inrage/templates/navigation_login.php",
+				"file13": "inrage/templates/privacy_policy.html",
+				"file14": "inrage/templates/profile.html",
+				"file15": "inrage/templates/register.html",
+				"file16": "inrage/templates/startpage.html",
+				"file17": "inrage/templates/static.html"
+			},
+			{
+				"index": "css",
+				"file1": "inrage/css/stylesheet.css"
+			},
+			{
+				"index": "images",
+				"file1": "inrage/images/logo.png",
+				"file2": "inrage/images/inrage.jpg",
+				"file3": "inrage/images/login_bg.jpg",
+				"file4": "inrage/images/eye.svg",
+				"file5": "inrage/images/logo-signup.png",
+				"file6": "inrage/images/no_background.png"
+			},
+			{
+				"index": "js"
+			}
+		]
+}

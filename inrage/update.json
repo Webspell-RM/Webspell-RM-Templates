@@ -1,0 +1,27 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "inrage/update.php",
+				"file2": "inrage/install.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates"
+			},
+			{
+				"index": "css"
+			},
+			{
+				"index": "images"
+			},
+			{
+				"index": "js"
+			}
+		]
+}
