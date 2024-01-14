@@ -90,11 +90,10 @@ header('X-UA-Compatible: IE=edge,chrome=1');
     ?>
 </head>
 <body>
+    <?php echo get_navigation_modul();?>
     <div class="d-flex flex-column sticky-footer-wrapper"> <!-- flex -->
         <!-- Navigation Modul --> 
-        <div id="navigation_modul">        
-        <?php echo get_navigation_modul();?>
-        </div>
+        
         <?php echo get_lock_modul();?>
         
         <!-- Navigation Modul END-->
@@ -103,7 +102,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
         <?php echo get_head_modul();?>
         </div>
         <!-- Head Modul END-->
- 
+        <?php echo get_headelements();?>
         <!-- content Center Head -->
         <div id="head_section"> 
         <?php if (!in_array($site, $hide6)) {echo get_head_section();}?>
