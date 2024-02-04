@@ -27,7 +27,7 @@
     <p>$description</p>
     <!-- Error Box -->
     $showerror
-    <form action="index.php?site=contact" method="post" role="form" onsubmit="return validate()" class="form-horizontal">
+    <form action="index.php?site=contact" method="post" role="form" onsubmit="return validate()" class="form-horizontal needs-validation" novalidate>
       <input type="hidden" name="action" value="send">
       <div class="row">
         <div class="col-sm-5">
@@ -41,12 +41,12 @@
           <!-- Name -->          
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
-            <input type="text" name="name" class="form-control" placeholder="$name" aria-label="Name" aria-describedby="basic-addon1">
+            <input type="text" name="name" class="form-control" value="$name" aria-label="name" aria-describedby="basic-addon1" required>
           </div>
           <!-- Mail -->
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon2"><i class="bi bi-envelope"></i></span>
-            <input type="email" name="from" class="form-control" placeholder="$mail" aria-label="mail" aria-describedby="basic-addon2">
+            <input type="email" name="from" class="form-control" value="$from" aria-label="mail" aria-describedby="basic-addon2" required>
           </div>
         
           <small>$e_mail_info</small><br />
@@ -57,35 +57,22 @@
           <!-- Subject -->
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon3"><i class="bi bi-info-circle"></i></span>
-            <input type="text" name="subject" class="form-control" placeholder="$subject" aria-label="subject" aria-describedby="basic-addon3">
+            <input type="text" name="subject" class="form-control" placeholder="$subject" aria-label="subject" aria-describedby="basic-addon3" required>
           </div>
           <!-- Message -->
           <div class="input-group mb-3">
             <span class="input-group-text"><i class="bi bi-chat-square-text"></i></span>
-            <textarea name="text" class="form-control" aria-label="With textarea" rows="9" value="$message">$text</textarea>
+            <textarea name="text" class="form-control" aria-label="With textarea" rows="9" placeholder="$message" required>$text</textarea>
           </div>
-
           
         </div>
 
-
-<div class="col-sm-12">
-<script type="text/javascript">
-            function validate() {
-            if (document.getElementById('accept_gdpr').checked) {
-              return true;
-            } else {
-              alert("$lang_GDPRaccept");
-              return false;
-            }
-              return false;
-            }
-          </script>
+        <div class="col-sm-12">
           <blockquote>
-            <input type="checkbox" class="form-check-input" id="accept_gdpr" value="0"> $lang_GDPRinfo 
+            <input type="checkbox" class="form-check-input" id="accept_gdpr" value="0" required> <label class="form-check-label" for="invalidCheck">$lang_GDPRinfo</label>
           </blockquote>
 
-</div>
+        </div>
       </div>
       
       <!-- Submit button -->
@@ -106,7 +93,7 @@
     <p>$description</p>
     <!-- Error Box -->
     $showerror
-    <form action="index.php?site=contact" method="post" role="form" onsubmit="return validate()" class="form-horizontal">
+    <form action="index.php?site=contact" method="post" role="form" onsubmit="return validate()" class="form-horizontal needs-validation" novalidate>
       <input type="hidden" name="action" value="send">
       <div class="row">
         <div class="col-sm-5">
@@ -120,13 +107,13 @@
           
           <!-- Name -->          
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user fa-fw"></i></span>
-            <input type="text" name="name" class="form-control" placeholder="$name" aria-label="Name" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+            <input type="text" name="name" class="form-control" placeholder="$user" aria-label="name" aria-describedby="basic-addon1" required>
           </div>
           <!-- Mail -->
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon2"><i class="fas fa-envelope fa-fw"></i></span>
-            <input type="email" name="from" class="form-control" placeholder="$mail" aria-label="mail" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"><i class="bi bi-envelope"></i></span>
+            <input type="email" name="from" class="form-control" placeholder="$mail" aria-label="mail" aria-describedby="basic-addon2" required>
           </div>
         
           <small>$e_mail_info</small><br />
@@ -137,13 +124,13 @@
         <div class="col-sm-7">
           <!-- Subject -->
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon3"><i class="fas fa-info-circle"></i></span>
-            <input type="text" name="subject" class="form-control" placeholder="$subject" aria-label="subject" aria-describedby="basic-addon3">
+            <span class="input-group-text" id="basic-addon3"><i class="bi bi-info-circle"></i></span>
+            <input type="text" name="subject" class="form-control" placeholder="$subject" aria-label="subject" aria-describedby="basic-addon3" required>
           </div>
           <!-- Message -->
           <div class="input-group mb-3">
-            <span class="input-group-text"><i class="fas fa-comment"></i></span>
-            <textarea name="text" class="form-control" aria-label="With textarea" rows="9" value="$message">$text</textarea>
+            <span class="input-group-text"><i class="bi bi-chat-square-text"></i></span>
+            <textarea name="text" class="form-control" aria-label="With textarea" rows="9" placeholder="$message" required>$text</textarea>
           </div>
           
           <!-- Security code -->
@@ -158,19 +145,8 @@
         </div>
 
         <div class="col-sm-12">
-          <script type="text/javascript">
-            function validate() {
-            if (document.getElementById('accept_gdpr').checked) {
-              return true;
-            } else {
-              alert("$lang_GDPRaccept");
-              return false;
-            }
-              return false;
-            }
-          </script>
           <blockquote>
-            <input type="checkbox" class="form-check-input" id="accept_gdpr" value="0"> $lang_GDPRinfo 
+            <input type="checkbox" class="form-check-input" id="accept_gdpr" value="0" required> <label class="form-check-label" for="invalidCheck">$lang_GDPRinfo</label>
           </blockquote>
 
 </div>

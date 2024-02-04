@@ -10,7 +10,7 @@
  *¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯*
  * @version         Webspell-RM                                                                                                       *
  *                                                                                                                                    *
- * @copyright       2018-2022 by webspell-rm.de <https://www.webspell-rm.de>                                                          *
+ * @copyright       2018-2024 by webspell-rm.de <https://www.webspell-rm.de>                                                          *
  * @support         For Support, Plugins, Templates and the Full Script visit webspell-rm.de <https://www.webspell-rm.de/forum.html>  *
  * @WIKI            webspell-rm.de <https://www.webspell-rm.de/wiki.html>                                                             *
  *                                                                                                                                    *
@@ -41,8 +41,8 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="Website using webSPELL-RM CMS">
-    <meta name="keywords" content="Clandesign, Webspell, Webspell | RM, Wespellanpassungen, Webdesign, Tutorials, Downloads, Webspell-rm, rm, addon, plugin, Templates Webspell Addons, Webspell-rm, rm, plungin, mods, Webspellanpassungen, Modifikationen und Anpassungen und mehr!">
+    <meta name="description" content="Kostenlose Homepage erstellen mit webSPELL-RM CMS: Einfach, schnell &amp; kostenlos! Vorlage und Plugins wählen und in wenigen Minuten mit der eigenen Website online gehen.">
+    <meta name="keywords" content="Clandesign, Webspell, Webspell-RM, Wespellanpassungen, Webdesign, Tutorials, Downloads, Webspell-rm, rm, addon, plugin, Templates Webspell Addons, plungin, mods, Webspellanpassungen, Modifikationen und Anpassungen und mehr!">
     <meta name="robots" content="all">
     <meta name="abstract" content="Anpasser an Webspell | RM">
     <meta name="copyright" content="Copyright &copy; 2018-2024 by webspell-rm.de">
@@ -50,7 +50,6 @@ header('X-UA-Compatible: IE=edge,chrome=1');
     <meta name="revisit-After" content="1days">
     <meta name="distribution" content="global">
     <link rel="SHORTCUT ICON" href="./includes/themes/<?php echo $theme_name; ?>/templates/favicon.ico">
-   
  
     <!-- Head & Title include -->
     <title><?= get_sitetitle(); ?></title>
@@ -90,93 +89,75 @@ header('X-UA-Compatible: IE=edge,chrome=1');
     ?>
 </head>
 <body>
+    
     <div class="d-flex flex-column sticky-footer-wrapper"> <!-- flex -->
+        <?php if (!in_array($site, $hide9)) {echo get_via_navigation_modul();}?> 
         <!-- Navigation Modul --> 
-        <div id="navigation_modul">        
-        <?php echo get_navigation_modul();?>
-        </div>
+        <?php echo get_navigation_modul();?>    
         <?php echo get_lock_modul();?>
-        
-        <!-- Navigation Modul END-->
-        <div id="head_modul">  
-        <!-- Head Modul -->
         <?php echo get_head_modul();?>
-        </div>
-        <!-- Head Modul END-->
- 
-        <!-- content Center Head -->
-        <div id="head_section"> 
+        <?php echo get_headelements();?>
+        
         <?php if (!in_array($site, $hide6)) {echo get_head_section();}?>
-        </div>
+       
         <!-- content Center Head End-->
 
         <main class="flex-fill">  <!-- flex -->
         
-            <div class="container content_style"> <!-- container -->
+            <div class="container con1tent_style"> <!-- container -->
                 <div class="row"> <!-- row -->            
 
-                <!-- left column linke Spalte -->
-               <?php if (!in_array($site, $hide3)) { ?>
-               <?php if (!in_array($site, $hide1)) { ?>
+                    <!-- left column linke Spalte -->
+                    <?php if (!in_array($site, $hide3)) { ?>
+                    <?php if (!in_array($site, $hide1)) { ?>
                 
-                <div id="leftcol" class="col-md-3"> 
-                    <?php echo get_left_side ();?>
-                </div>
+                    <div id="leftcol" class="col-md-3"> 
+                        <?php echo get_left_side ();?>
+                    </div>
 
-                <?php } ?>
-                <?php } ?>
-                <!-- left column linke Spalte END -->
+                    <?php } ?>
+                    <?php } ?>
+                    <!-- left column linke Spalte END -->
 
-                <!-- main content area -->
-                <div id="maincol" class="<?php echo get_mainhide(); ?>">
+                    <!-- main content area -->
+                    <div id="maincol" class="<?php echo get_mainhide(); ?>">
                 
-                <!-- content Center Head -->
-                <div id="center_head">  
-                <?php if (!in_array($site, $hide4)) {echo get_center_head();}?>
-                </div>
-                <!-- content Center Head End-->
-                
-                
-                <!-- Main Content -->
-                <?php echo get_mainContent(); ?>
-                <!-- Main Content End-->
+                        <!-- content Center Head -->
+                        <?php if (!in_array($site, $hide4)) {echo get_center_head();}?>
+                        <!-- content Center Head End-->
+                        <!-- Main Content -->
+                        <?php echo get_mainContent(); ?>
+                        <!-- Main Content End-->
+                        <!-- content Center Head -->    
+                        <?php if (!in_array($site, $hide5)) {echo get_center_footer();}?>
+                        <!-- content Center Head End-->
+                        
+                    </div>
+                    <!-- main content area END -->
 
-                <!-- content Center Head -->    
-                <?php if (!in_array($site, $hide5)) {echo get_center_footer();}?>
-                <!-- content Center Head End-->
-                
-                
-                </div>
-                <!-- main content area END -->
+                    <!-- right column rechte Spalte -->
+                    <?php if (!in_array($site, $hide3)) { ?>
+                    <?php if (!in_array($site, $hide2)) { ?>
+                    
+                    <div id="rightcol" class="col-md-3">
+                        <?php echo get_right_side ();?>
+                    </div>
 
-                <!-- right column rechte Spalte -->
-                <?php if (!in_array($site, $hide3)) { ?>
-                <?php if (!in_array($site, $hide2)) { ?>
-                
-                <div id="rightcol" class="col-md-3">
-                    <?php echo get_right_side ();?>
-                </div>
-
-                <?php } ?>
-                <?php } ?>
-                <!-- right column rechte Spalte END -->
+                    <?php } ?>
+                    <?php } ?>
+                    <!-- right column rechte Spalte END -->
                 </div> <!-- row End -->
             </div> <!-- container-content End -->
-
-        
         </main>
         <!-- content Center Footer -->
         <?php if (!in_array($site, $hide7)) {echo get_foot_section();}?>
         <!-- content Center Footer END -->
-    <footer>
-        <!-- Foot top Abstand zum main content -->
-        <div id="footcol"></div>
-        <!-- Foot top Abstand zum main content END -->
-        <!-- Foot Modul -->
-        <?php echo get_foot_modul(); ?>
-        <!-- Foot Modul END-->
-    </footer>
-</div>  <!-- flex END -->
+        <footer>
+            <!-- Foot Modul -->
+            <?php echo get_foot_modul(); ?>
+            <!-- Foot Modul END-->
+        </footer>
+    </div>  <!-- flex END -->
     <!-- scroll to top feature -->
     <div class="scroll-top-wrapper"> 
         <span class="scroll-top-inner">
@@ -201,6 +182,27 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
     <!-- Language recognition for DataTables -->
     <? echo "<script>const LangDataTables = '$_language->language';</script>"; ?>
+<script type="text/javascript">
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
 
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
 </body>
 </html>
