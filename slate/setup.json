@@ -1,0 +1,55 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "slate/install.php",
+				"file2": "slate/index.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates",
+				"file1": "slate/templates/checklogin.html",
+				"file2": "slate/templates/contact.html",
+				"file3": "slate/templates/error_404.html",
+				"file4": "slate/templates/favicon.ico",
+				"file5": "slate/templates/imprint.html",
+				"file6": "slate/templates/logged.html",
+				"file7": "slate/templates/login.html",
+				"file8": "slate/templates/loginoverview.html",
+				"file9": "slate/templates/lostpassword.html",
+				"file10": "slate/templates/myprofile.html",
+				"file11": "slate/templates/navigation.html",
+				"file12": "slate/templates/navigation_login.php",
+				"file13": "slate/templates/privacy_policy.html",
+				"file14": "slate/templates/profile.html",
+				"file15": "slate/templates/register.html",
+				"file16": "slate/templates/startpage.html",
+				"file17": "slate/templates/static.html"
+			},
+			{
+				"index": "css",
+				"file1": "slate/css/page.css",
+				"file2": "slate/css/stylesheet.css"			
+			},
+			{
+				"index": "images",
+				"file1": "slate/images/logo.png",
+				"file2": "slate/images/slate.jpg",
+				"file3": "slate/images/login_bg.jpg",
+				"file4": "slate/images/eye.svg",
+				"file5": "slate/images/logo-signup.png",
+				"file6": "slate/images/no_background.png"
+			},
+			{				
+				"index": "js",
+				"file1": "slate/js/jquery.easing.min.js",
+				"file2": "slate/js/passtrength.js",
+				"file3": "slate/js/passwordstrength.js"
+			}
+		]
+}
