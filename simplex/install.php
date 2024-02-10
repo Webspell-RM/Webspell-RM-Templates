@@ -82,9 +82,9 @@ add_theme_install($add_theme_install = "INSERT INTO `".PREFIX."settings_themes` 
 ('', '$name', '$modulname', '$pfad', '$version', $active, 0, 'rgb(217,35,15)', '16px', 'rgb(217,35,15)', 'rgb(245,245,245)', 'rgb(33,35,39)', '2px', 'rgb(202,202,202)', 'rgb(245,245,245)', '', 'rgb(245,245,245)', 'rgb(217,35,15)', 'rgb(154,12,50)', 'ms-auto', 'Roboto', '13px', 'rgb(255,255,255)', 'rgb(87,71,71)', 'rgb(251,215,211)', '', '20px', '', '', '', 'rgb(217,35,15)', '', '', '', 'rgb(169,28,13)', 'rgb(255,255,255)', 'rgb(125,120,121)', 'rgb(33,35,39)', '', '', '', '', '', '', '', 'rgb(255,255,255)', 'rgb(217,35,15)', 'rgb(255,255,255)', 'rgb(217,35,15)', 'logo.png', '', '', 'login_bg.jpg', 'rgb(230,172,23)', 'rgb(255,255,255)', 'headlines_01.css', 1);");
 
 add_navigation($add_navigation = "INSERT INTO `".PREFIX."navigation_website_sub` (`snavID`, `mnavID`, `name`, `modulname`, `url`, `sort`, `indropdown`, `themes_modulname`) VALUES
-('', 5, '{[de]}Kontakt{[en]}Contact{[it]}Contatti', 'contact', 'index.php?site=contact', 1, 1, '$themes_modulname'),
-('', 5, '{[de]}Datenschutz-Bestimmungen{[en]}Privacy Policy{[it]}Informativa sulla privacy', 'privacy_policy', 'index.php?site=privacy_policy', 2, 1, '$themes_modulname'),
-('', 5, '{[de]}Impressum{[en]}Imprint{[it]}Impronta Editoriale', 'imprint', 'index.php?site=imprint', 3, 1, '$themes_modulname');");
+('', 6, '{[de]}Kontakt{[en]}Contact{[it]}Contatti', 'contact', 'index.php?site=contact', 1, 1, '$themes_modulname'),
+('', 6, '{[de]}Datenschutz-Bestimmungen{[en]}Privacy Policy{[it]}Informativa sulla privacy', 'privacy_policy', 'index.php?site=privacy_policy', 2, 1, '$themes_modulname'),
+('', 6, '{[de]}Impressum{[en]}Imprint{[it]}Impronta Editoriale', 'imprint', 'index.php?site=imprint', 3, 1, '$themes_modulname');");
 
 #######################################################################################################################################
 
