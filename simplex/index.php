@@ -41,7 +41,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="Kostenlose Homepage erstellen mit webSPELL-RM CMS: Einfach, schnell &amp; kostenlos! Vorlage und Plugins wählen und in wenigen Minuten mit der eigenen Website online gehen.">
+    <meta name="description" content="Kostenlose Homepage erstellen mit Webspell-RM CMS: Einfach, schnell &amp; kostenlos! Vorlage und Plugins wählen und in wenigen Minuten mit der eigenen Website online gehen.">
     <meta name="keywords" content="Clandesign, Webspell, Webspell-RM, Wespellanpassungen, Webdesign, Tutorials, Downloads, Webspell-rm, rm, addon, plugin, Templates Webspell Addons, plungin, mods, Webspellanpassungen, Modifikationen und Anpassungen und mehr!">
     <meta name="robots" content="all">
     <meta name="abstract" content="Anpasser an Webspell | RM">
