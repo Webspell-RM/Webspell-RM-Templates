@@ -30,14 +30,13 @@
 global $userID,$_database,$add_database_install,$str,$str2,$modulname,$add_plugin_manager,$add_navigation,$navi_link,$add_dashboard_navigation,$dashnavi_link,$add_module_install,$add_button_install,$add_theme_install,$add_widget_install,$themes_modulname;
 ##### @info: Template #################################################################################################################
 
-$str                      =   "Template Slate";     // name of the plugin
-$name                     =   "Slate";              // name of the plugin
-$modulname                =   "slate";              // name to uninstall
-$pfad                     =   "slate";              // name of pfad
+$str                      =   "Template Spacelab";  // name of the plugin
+$name                     =   "Spacelab";           // name of the plugin
+$modulname                =   "spacelab";           // name to uninstall
+$pfad                     =   "spacelab";           // name of pfad
 $active                   =   "1";                  // plugin activate 1 yes | 0 no
 $version                  =   "0.2";                // current version, visit authors website for updates, fixes, ..
-$themes_modulname         =   "slate";              // name of module
-
+$themes_modulname         =   "spacelab";           // name of module
 
 #######################################################################################################################################
 if(!ispageadmin($userID)) { echo ("Access denied!"); return false; }		
@@ -76,10 +75,12 @@ add_module_install($add_module_install = "INSERT INTO `".PREFIX."settings_module
 ('', 'Footer', 'footer', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'activated', 1, 0, 1, 1, 1, 1);");
 
 add_button_install($add_button_install = "INSERT INTO `".PREFIX."settings_buttons` (`buttonID`, `name`, `modulname`, `active`, `version`, `button1`, `button2`, `button3`, `button4`, `button5`, `button6`, `button7`, `button8`, `button9`, `button10`, `button11`, `button12`, `button13`, `button14`, `button15`, `button16`, `button17`, `button18`, `button19`, `button20`, `button21`, `button22`, `button23`, `button24`, `button25`, `button26`, `button27`, `button28`, `button29`, `button30`, `button31`, `button32`, `button33`, `button34`, `button35`, `button36`, `button37`, `button38`, `button39`, `button40`, `button41`, `button42`, `btn_border_radius`) VALUES
-('', '$name', '$modulname', '$active', '$version', 'rgb(58,63,68)', 'rgb(49,54,58)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(122,130,136)', 'rgb(104,111,116)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(98,196,98)', 'rgb(83,167,83)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(238,95,91)', 'rgb(202,81,77)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(248,148,6)', 'rgb(211,126,5)', 'rgb(0,0,0)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(91,192,222)', 'rgb(77,163,189)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(233,236,239)', 'rgb(198,201,203)', 'rgb(0,0,0)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(39,43,48)', 'rgb(71,75,79)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(84,91,98)', 'rgb(254,130,29)', 'rgb(196,89,1)', '0px');");
+('', '$name', '$modulname', '$active', '$version', 'rgb(68,110,155)', 'rgb(58,94,132)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(153,153,153)', 'rgb(130,130,130)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(60,181,33)', 'rgb(51,154,28)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(205,2,0)', 'rgb(174,2,0)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(212,117,0)', 'rgb(180,99,0)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(51,153,243)', 'rgb(12,115,205)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(238,238,238)', 'rgb(202,202,202)', 'rgb(87,71,71)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(51,51,51)', 'rgb(82,82,82)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(51,153,243)', 'rgb(12,115,205)', '0px');");
 
 add_theme_install($add_theme_install = "INSERT INTO `".PREFIX."settings_themes` (`themeID`, `name`, `modulname`, `pfad`, `version`, `active`, `express_active`, `nav1`, `nav2`, `nav3`, `nav4`, `nav5`, `nav6`, `nav7`, `nav8`, `nav9`, `nav10`, `nav11`, `nav12`, `nav_text_alignment`, `body1`, `body2`, `body3`, `body4`, `body5`, `background_pic`, `border_radius`, `typo1`, `typo2`, `typo3`, `typo4`, `typo5`, `typo6`, `typo7`, `typo8`, `card1`, `card2`, `foot1`, `foot2`, `foot3`, `foot4`, `foot5`, `foot6`, `calendar1`, `calendar2`, `carousel1`, `carousel2`, `carousel3`, `carousel4`, `logo_pic`, `logotext1`, `logotext2`, `reg_pic`, `reg1`, `reg2`, `headlines`, `sort`) VALUES
-('', '$name', '$modulname', '$pfad', '$version', $active, 0, 'rgb(58,63,68)', '18px', 'rgb(217,217,217)', 'rgb(58,63,68)', 'rgb(254,130,29)', '1px', 'rgb(217,217,217)', 'rgb(255,255,255)', '', 'rgb(58,63,68)', 'rgb(245,245,245)', 'rgb(43,46,50)', 'ms-auto', 'Roboto', '13px', 'rgb(39,43,48)', 'rgb(170,170,170)', 'rgb(30,33,37)', '', '0px', '', '', '', 'rgb(254,130,29)', '', '', '', 'rgb(196,89,1)', 'rgb(50,56,62)', 'rgb(146,143,143)', 'rgb(58,63,68)', '', '', '', '', '', '', '', '', 'rgb(254,130,29)', '', 'rgb(254,130,29)', 'logo.png', '', '', 'login_bg.jpg', 'rgb(58,63,68)', 'rgb(255,255,255)', 'headlines_01.css', 1);");
+('', '$name', '$modulname', '$pfad', '$version', $active, 0, 'rgb(80,130,188)', '16px', 'rgb(220,218,218)', 'rgb(109,148,191)', 'rgb(119,119,119)', '1px', 'rgb(220,218,218)', 'rgb(255,255,255)', '', 'rgb(109,148,191)', 'rgb(255,255,255)', 'rgb(109,148,191)', 'ms-auto', 'Default', '13px', 'rgb(255,255,255)', 'rgb(119,119,119)', 'rgb(196,225,251)', '', '0px', '', '', '', 'rgb(51,153,243)', '', '', '', 'rgb(12,115,205)', 'rgb(255,255,255)', 'rgb(202,201,201)', 'rgb(202,202,202)', '', '', '', '', '', '', '', '', 'rgb(51,153,243)', '', 'rgb(51,153,243)', 'logo.png', '', '', 'login_bg.jpg', '', 'rgb(255,255,255)', 'headlines_01.css', 1);");
+
+
 
 add_navigation($add_navigation = "INSERT INTO `".PREFIX."navigation_website_sub` (`snavID`, `mnavID`, `name`, `modulname`, `url`, `sort`, `indropdown`, `themes_modulname`) VALUES
 ('', 6, '{[de]}Kontakt{[en]}Contact{[it]}Contatti', 'contact', 'index.php?site=contact', 1, 1, '$themes_modulname'),

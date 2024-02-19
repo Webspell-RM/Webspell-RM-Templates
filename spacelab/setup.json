@@ -1,0 +1,52 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "spacelab/install.php",
+				"file2": "spacelab/uninstall.php",
+				"file3": "spacelab/index.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates",
+				"file1": "spacelab/templates/checklogin.html",
+				"file2": "spacelab/templates/contact.html",
+				"file3": "spacelab/templates/error_404.html",
+				"file4": "spacelab/templates/favicon.ico",
+				"file5": "spacelab/templates/imprint.html",
+				"file6": "spacelab/templates/logged.html",
+				"file7": "spacelab/templates/login.html",
+				"file8": "spacelab/templates/lostpassword.html",
+				"file9": "spacelab/templates/myprofile.html",
+				"file10": "spacelab/templates/navigation.html",
+				"file11": "spacelab/templates/navigation_login.php",
+				"file12": "spacelab/templates/privacy_policy.html",
+				"file13": "spacelab/templates/profile.html",
+				"file14": "spacelab/templates/register.html",
+				"file15": "spacelab/templates/startpage.html",
+				"file16": "spacelab/templates/static.html",
+				"file17": "spacelab/templates/welcome_page.html"
+			},
+			{
+				"index": "css",
+				"file1": "spacelab/css/stylesheet.css"			
+			},
+			{
+				"index": "images",
+				"file1": "spacelab/images/logo.png",
+				"file2": "spacelab/images/spacelab.jpg",
+				"file3": "spacelab/images/login_bg.jpg",
+				"file4": "spacelab/images/eye.svg",
+				"file5": "spacelab/images/logo-signup.png",
+				"file6": "spacelab/images/no_background.png"
+			},
+			{				
+				"index": "js"
+			}
+		]
+}

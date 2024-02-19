@@ -59,8 +59,8 @@ add_widget_install($add_widget_install = "INSERT INTO `" . PREFIX . "settings_wi
 
 #@info: Base Modul Einstellung // # Die Startseite / Bereiche müssen angepasst werden
 add_module_install($add_module_install = "INSERT INTO `".PREFIX."settings_module` (`pluginID`, `name`, `modulname`, `themes_modulname`, `full_activated`, `custom_activated`, `via_navigation`, `head_activated`, `content_head_activated`, `content_foot_activated`, `head_section_activated`, `foot_section_activated`, `modul_display`, `activate`, `sidebar`, `plugin_settings`, `plugin_module`, `plugin_widget`, `widget1`, `widget2`, `widget3`) VALUES
-('', '', 'startpage', '$themes_modulname', 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 'activated', 0, 1, 0, 0, 0, 0),
-('', 'Startpage', '', '$themes_modulname', 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 'activated', 0, 1, 0, 0, 0, 0),
+('', 'Startpage', '', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 1, 0, 0, 0, 0),
+('', '', 'startpage', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'activated', 0, 1, 0, 0, 0, 0),
 ('', 'Profile', 'profile', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
 ('', 'Login', 'login', '$themes_modulname', 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
 ('', 'Lost Password', 'lostpassword', '$themes_modulname', 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
