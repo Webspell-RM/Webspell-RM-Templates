@@ -2,8 +2,9 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "simplex/install.php",
-				"file2": "simplex/index.php"
+				"file1": "simplex/install.php",				
+				"file2": "simplex/uninstall.php",
+				"file3": "simplex/index.php"
 			},
 			{
 				"index": "admin"

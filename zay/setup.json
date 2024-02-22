@@ -2,8 +2,9 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "zay/install.php",
-				"file2": "zay/index.php"
+				"file1": "zay/install.php",				
+				"file2": "zay/uninstall.php",
+				"file3": "zay/index.php"
 			},
 			{
 				"index": "admin"

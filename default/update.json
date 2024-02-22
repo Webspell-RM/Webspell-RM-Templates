@@ -2,8 +2,10 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "default/update.php",
-				"file2": "default/install.php"
+				"file1": "default/install.php",				
+				"file2": "default/uninstall.php",
+				"file3": "default/index.php",
+				"file4": "default/update.php"
 			},
 			{
 				"index": "admin"

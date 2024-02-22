@@ -2,8 +2,10 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "spacelab/update.php",
-				"file2": "spacelab/install.php"
+				"file1": "spacelab/install.php",				
+				"file2": "spacelab/uninstall.php",
+				"file3": "spacelab/index.php",
+				"file4": "spacelab/update.php"
 			},
 			{
 				"index": "admin"

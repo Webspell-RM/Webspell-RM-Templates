@@ -2,7 +2,7 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "spacelab/install.php",
+				"file1": "spacelab/install.php",				
 				"file2": "spacelab/uninstall.php",
 				"file3": "spacelab/index.php"
 			},

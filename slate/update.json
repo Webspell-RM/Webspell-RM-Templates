@@ -2,8 +2,10 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "slate/update.php",
-				"file2": "slate/install.php"
+				"file1": "slate/install.php",				
+				"file2": "slate/uninstall.php",
+				"file3": "slate/index.php",
+				"file4": "slate/update.php"
 			},
 			{
 				"index": "admin"

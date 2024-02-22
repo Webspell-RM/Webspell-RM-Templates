@@ -2,7 +2,7 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "sandstone/install.php",
+				"file1": "sandstone/install.php",				
 				"file2": "sandstone/uninstall.php",
 				"file3": "sandstone/index.php"
 			},

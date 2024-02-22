@@ -2,8 +2,10 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "inrage/update.php",
-				"file2": "inrage/install.php"
+				"file1": "inrage/install.php",				
+				"file2": "inrage/uninstall.php",
+				"file3": "inrage/index.php",
+				"file4": "inrage/update.php"
 			},
 			{
 				"index": "admin"

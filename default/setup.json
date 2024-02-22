@@ -1,9 +1,10 @@
 {
 "items": [
 			{
-				"index": "php",
-				"file1": "default/install.php",
-				"file2": "default/index.php"
+				"index": "php",				
+				"file1": "default/install.php",				
+				"file2": "default/uninstall.php",
+				"file3": "default/index.php"
 			},
 			{
 				"index": "admin"

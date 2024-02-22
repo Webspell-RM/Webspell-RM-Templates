@@ -2,10 +2,10 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "sandstone/update.php",
-				"file2": "sandstone/install.php",
-				"file3": "sandstone/uninstall.php",
-				"file4": "sandstone/index.php"
+				"file1": "sandstone/install.php",				
+				"file2": "sandstone/uninstall.php",
+				"file3": "sandstone/index.php",
+				"file4": "sandstone/update.php"
 			},
 			{
 				"index": "admin"

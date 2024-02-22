@@ -2,9 +2,10 @@
 "items": [
 			{
 				"index": "php",
-				"file1": "cyborg/update.php",
-				"file2": "cyborg/install.php",
-				"file3": "cyborg/index.php"
+				"file1": "cyborg/install.php",				
+				"file2": "cyborg/uninstall.php",
+				"file3": "cyborg/index.php",
+				"file4": "cyborg/update.php"
 			},
 			{
 				"index": "admin"
