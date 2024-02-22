@@ -39,13 +39,11 @@ $version                  =   "0.2";                // current version, visit au
 $themes_modulname         =   "inrage";             // name of module
 
 #######################################################################################################################################
-if(!ispageadmin($userID)) { echo ("Access denied!"); return false; }		
-			
-		echo "<div class='card'>
-			<div class='card-header'>
-				$str Database Installation
-			</div>
-			<div class='card-body'>";
+if(!ispageadmin($userID)) { echo ("Access denied!"); return false; }
+$translate = new multiLanguage(detectCurrentLanguage());
+$translate->detectLanguages($str);
+$str = $translate->getTextByLanguage($str);   
+echo "<div class='card'><div class='card-header'>$str Database Installation</div><div class='card-body'>";
 #######################################################################################################################################
 
 ############ Plugin und Modul Einstellung ############################################################################################
