@@ -1,0 +1,29 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "watch/install.php",				
+				"file2": "watch/uninstall.php",
+				"file3": "watch/index.php",
+				"file4": "watch/update.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates"
+			},
+			{
+				"index": "css"
+			},
+			{
+				"index": "images"
+			},
+			{
+				"index": "js"
+			}
+		]
+}

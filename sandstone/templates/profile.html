@@ -113,6 +113,9 @@ $banned
                         <a class="nav-link active" id="about-tab" data-bs-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">$lang_about</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" id="signature-tab" data-bs-toggle="tab" href="#signature" role="tab" aria-controls="signature" aria-selected="true">$lang_signature</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" id="social_media-tab" data-bs-toggle="tab" href="#social_media" role="tab" aria-controls="social_media" aria-selected="false">$social_media</a>
                     </li>
                     $last_post
@@ -123,10 +126,8 @@ $banned
                     <li class="nav-item">
                         <a class="nav-link" id="statistics-tab" data-bs-toggle="tab" href="#statistics" role="tab" aria-controls="statistics" aria-selected="false">$statistics</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="awards-tab" data-bs-toggle="tab" href="#awards" role="tab" aria-controls="awards" aria-selected="false">$lang_awards</a>
-                    </li>
-                    $award_link
+                    $user_award_link
+                    $user_award_list
                 </ul>
                 <div class="tab-content profile-tab" id="myTabContent">
                     <div class="tab-pane fade show active" id="about" role="tabpanel" aria-current="about-tab">
@@ -134,6 +135,14 @@ $banned
                         <div class="col-12">
                             <h4>$lang_about</h4><br>
                             $about
+                        </div>
+                                        
+                        </div>
+                        <div class="tab-pane fade" id="signature" role="tabpanel" aria-current="signature-tab">
+                                        
+                        <div class="col-12">
+                            <h4>$lang_signature</h4><br>
+                            $signature
                         </div>
                                         
                         </div>
@@ -214,13 +223,13 @@ $banned
                                 </div>
                             </div>
                         </div>   
-
+                        
                         <div class="tab-pane fade" id="awards" role="tabpanel" aria-current="awards-tab">
                             <div class="col-md-12 text-center">
                                 <h4>$lang_awards</h4><br>
                                 $awards
                             </div>
-                        </div>      
+                        </div>    
                     </div>  
                 </div>
 <!-- END -->

@@ -156,10 +156,10 @@
     "description_de": "{[de]}Watch Themplate <br>Freie Designvorlage aus dem Hause Webspell-RM.",
     "languages": "<img class='flag' src='../images/languages/de.png'> <img class='flag' src='../images/languages/en.png'> <img class='flag' src='../images/languages/it.png'>",
     "path": "/watch/",
-    "req": "2.1.3",
+    "req": "2.1.4",
     "install_datei": "install",
-    "required": "footer,navigation_agency,portfolio",
-    "plus_plugin": "Footer, Navigation Agency,Portfolio"
+    "required": "footer,navigation_default,portfolio",
+    "plus_plugin": "Footer, Navigation Default, Portfolio"
   },
   "name": "PluginBase",
   "item10": {
