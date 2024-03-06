@@ -1,0 +1,18 @@
+/* Main Layout */
+.logo .bg-primary {
+background-color: transparent !important;
+}
+.gallery-widget-head {
+display: none
+}
+
+.videos-widget-head {
+display: none
+}
+
+.carousel-inner .carousel-caption {
+margin-bottom: 10px;
+min-width: 920px;
+}
+.nav-link .flag {height: 16px}
+
