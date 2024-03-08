@@ -41,12 +41,9 @@
 				"file2": "verdux/images/verdux.jpg",
 				"file3": "verdux/images/login_bg.jpg",
 				"file4": "verdux/images/eye.svg",
-				"file5": "verdux/images/slider/sliderpic1.jpg",
-				"file6": "verdux/images/slider/sliderpic2.jpg",
-				"file7": "verdux/images/slider/sliderpic3.jpg",
-				"file8": "verdux/images/logo_verdux.png",
-				"file9": "verdux/images/logo-signup.png",
-				"file10": "verdux/images/no_background.png"
+				"file5": "verdux/images/logo_verdux.png",
+				"file6": "verdux/images/logo-signup.png",
+				"file7": "verdux/images/no_background.png"
 			},
 			{
 				"index": "js"
