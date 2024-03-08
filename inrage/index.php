@@ -57,8 +57,8 @@ header('X-UA-Compatible: IE=edge,chrome=1');
     <base href="<?php echo $rewriteBase; ?>">
 
     <link href="tmp/rss.xml" rel="alternate" type="application/rss+xml" title="<?php echo $myclanname; ?> - RSS Feed">
-    <link rel="stylesheet" href="../components/cookies/css/cookieconsent.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="../components/cookies/css/iframemanager.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./components/cookies/css/cookieconsent.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./components/cookies/css/iframemanager.css" media="print" onload="this.media='all'">
     <?php
          
         /* Components & themes css */
@@ -175,10 +175,10 @@ header('X-UA-Compatible: IE=edge,chrome=1');
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Cookies Abfrage -->
-    <script defer src="../components/cookies/js/iframemanager.js"></script>
-    <script defer src="../components/cookies/js/cookieconsent.js"></script>
-    <script defer src="../components/cookies/js/cookieconsent-init.js"></script>
-    <script defer src="../components/cookies/js/app.js"></script>
+    <script defer src="./components/cookies/js/iframemanager.js"></script>
+    <script defer src="./components/cookies/js/cookieconsent.js"></script>
+    <script defer src="./components/cookies/js/cookieconsent-init.js"></script>
+    <script defer src="./components/cookies/js/app.js"></script>
 
     <!-- Language recognition for DataTables -->
     <? echo "<script>const LangDataTables = '$_language->language';</script>"; ?>
