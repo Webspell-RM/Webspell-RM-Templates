@@ -51,7 +51,7 @@ echo "<div class='card'><div class='card-header'>$str Database Installation</div
 safe_query("UPDATE `".PREFIX."settings_themes` SET active = 0 WHERE `active` = '1'");
 
 #@info: Widgets werden an der richtigen Position in der Index positioniert / anpassen ab ID 10
-add_widget_install($add_widget_install = "INSERT INTO `" . PREFIX . "settings_widgets` (`id`, `position`, `description`, `modulname`, `themes_modulname`, `widget`, `widgetname`, `widgetdatei`, `activate`, `number`, `sort`) VALUES
+add_widget_install($add_widget_install = "INSERT IGNORE INTO `" . PREFIX . "settings_widgets` (`id`, `position`, `description`, `modulname`, `themes_modulname`, `widget`, `widgetname`, `widgetdatei`, `activate`, `number`, `sort`) VALUES
 ('', 'page_navigation_widget', 'page_navigation_widget', 'navigation_default', '$themes_modulname', 'widget1', 'Navigation Default', 'widget_navigation_default', 0, 1, 1),
 ('', 'page_footer_widget', 'page_footer_widget', 'footer', '$themes_modulname', 'widget2', 'Easy Footer Content', 'widget_easyfooter_content', 0, 1, 0);");
 

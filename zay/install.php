@@ -51,11 +51,11 @@ safe_query("UPDATE `".PREFIX."settings_themes` SET active = 0 WHERE `active` = '
 
 #@info: Widgets werden an der richtigen Position in der Index positioniert / anpassen ab ID 10
 add_widget_install($add_widget_install = "INSERT INTO `" . PREFIX . "settings_widgets` (`id`, `position`, `description`, `modulname`, `themes_modulname`, `widget`, `widgetname`, `widgetdatei`, `activate`, `number`, `sort`) VALUES
-('', 'center_footer_widget', 'center_footer_widget', 'portfolio', '$themes_modulname', 'widget1', 'Portfolio Content', 'widget_portfolio_content', 0, 0, 2),
-('', 'center_footer_widget', 'center_footer_widget', 'sponsors', '$themes_modulname', 'widget2', 'Sponsors Content One', 'widget_sponsors_content_one', 0, 0, 1),
-('', 'page_footer_widget', 'page_footer_widget', 'footer', '$themes_modulname', 'widget2', 'Easy Footer Content', 'widget_easyfooter_content', 0, 0, 1),
-('', 'page_navigation_widget', 'page_navigation_widget', 'navigation_default', '$themes_modulname', 'widget1', 'Navigation Default', 'widget_navigation_default', 0, 0, 1),
-('', 'page_head_widget', 'page_head_widget', 'carousel', '$themes_modulname', 'widget1', 'Carousel Only', 'widget_carousel_only', 0, 0, 1);");
+('', 'center_footer_widget', 'center_footer_widget', 'portfolio', '$themes_modulname', 'widget1', 'Portfolio Content', 'widget_portfolio_content', 0, 1, 2),
+('', 'center_footer_widget', 'center_footer_widget', 'sponsors', '$themes_modulname', 'widget2', 'Sponsors Content One', 'widget_sponsors_content_one', 0, 1, 1),
+('', 'page_footer_widget', 'page_footer_widget', 'footer', '$themes_modulname', 'widget2', 'Easy Footer Content', 'widget_easyfooter_content', 0, 1, 1),
+('', 'page_navigation_widget', 'page_navigation_widget', 'navigation_default', '$themes_modulname', 'widget1', 'Navigation Default', 'widget_navigation_default', 0, 1, 1),
+('', 'page_head_widget', 'page_head_widget', 'carousel', '$themes_modulname', 'widget1', 'Carousel Only', 'widget_carousel_only', 0, 1, 1);");
 
 
 #@info: Base Modul Einstellung // # Die Startseite / Bereiche müssen angepasst werden

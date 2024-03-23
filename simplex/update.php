@@ -51,6 +51,12 @@ echo "<div class='card'><div class='card-header'>$str Database Updation</div><di
 safe_query("UPDATE `".PREFIX."settings_themes` SET active = 0 WHERE `active` = '1'");
 safe_query("UPDATE `".PREFIX."settings_themes` SET version = '$version' WHERE `modulname` = '$modulname'");
 safe_query("UPDATE `".PREFIX."settings_themes` SET active = '$active' WHERE `modulname` = '$modulname'");
+safe_query("UPDATE `".PREFIX."settings_themes` SET pfad = '$pfad' WHERE `modulname` = '$modulname'");
+
+#@info: Widgets werden an der richtigen Position in der Index positioniert / anpassen ab ID 10
+add_widget_install($add_widget_install = "INSERT INTO `" . PREFIX . "settings_widgets` (`id`, `position`, `description`, `modulname`, `themes_modulname`, `widget`, `widgetname`, `widgetdatei`, `activate`, `number`, `sort`) VALUES
+('', 'page_navigation_widget', 'page_navigation_widget', 'navigation_default', '$themes_modulname', 'widget1', 'Navigation Default', 'widget_navigation_default', 0, 1, 1),
+('', 'page_footer_widget', 'page_footer_widget', 'footer', '$themes_modulname', 'widget2', 'Easy Footer Content', 'widget_easyfooter_content', 0, 1, 1);");
 
 #@info: Widgets werden an der richtigen Position in der Index positioniert / anpassen ab ID 10
 /*add_widget_install($add_widget_install = "INSERT INTO `" . PREFIX . "settings_widgets` (`id`, `position`, `description`, `modulname`, `themes_modulname`, `widgetname`, `widget`, `widgetdatei`, `sort`, `activate`, `number`) VALUES

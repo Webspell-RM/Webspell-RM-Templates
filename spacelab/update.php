@@ -48,36 +48,45 @@ echo "<div class='card'><div class='card-header'>$str Database Updation</div><di
 
 ############# Plugin und Modul Einstellung ############################################################################################
 safe_query("UPDATE `".PREFIX."settings_themes` SET active = 0 WHERE `active` = '1'");
+safe_query("UPDATE `".PREFIX."settings_themes` SET version = '$version' WHERE `modulname` = '$modulname'");
+safe_query("UPDATE `".PREFIX."settings_themes` SET active = '$active' WHERE `modulname` = '$modulname'");
+safe_query("UPDATE `".PREFIX."settings_themes` SET pfad = '$pfad' WHERE `modulname` = '$modulname'");
 
 #@info: Widgets werden an der richtigen Position in der Index positioniert / anpassen ab ID 10
-add_widget_install($add_widget_install = "INSERT INTO `".PREFIX."settings_widgets` (`id`, `position`, `description`, `modulname`, `themes_modulname`, `widgetname`, `widget`, `widgetdatei`, `sort`, `activate`) VALUES
-('', 'page_navigation_widget', 'page_navigation_widget', 'navigation_default', '$themes_modulname', 'Navigation Default', 'widget1', 'widget_navigation_default', 0, 0),
-('', 'page_footer_widget', 'page_footer_widget', 'footer', '$themes_modulname', 'Easy Footer Content', 'widget2', 'widget_easyfooter_content', 0, 0);");
+add_widget_install($add_widget_install = "INSERT INTO `" . PREFIX . "settings_widgets` (`id`, `position`, `description`, `modulname`, `themes_modulname`, `widget`, `widgetname`, `widgetdatei`, `activate`, `number`, `sort`) VALUES
+('', 'page_navigation_widget', 'page_navigation_widget', 'navigation_default', '$themes_modulname', 'widget1', 'Navigation Default', 'widget_navigation_default', 0, 1, 1),
+('', 'page_footer_widget', 'page_footer_widget', 'footer', '$themes_modulname', 'widget2', 'Easy Footer Content', 'widget_easyfooter_content', 0, 1, 0);");
 
 #@info: Base Modul Einstellung // # Die Startseite / Bereiche müssen angepasst werden
-add_module_install($add_module_install = "INSERT INTO `".PREFIX."settings_module` (`pluginID`, `name`, `modulname`, `themes_modulname`, `activate`, `sidebar`, `head_activated`, `content_head_activated`, `content_foot_activated`, `head_section_activated`, `foot_section_activated`, `modul_display`, `full_activated`, `plugin_settings`, `plugin_module`, `plugin_widget`, `widget1`, `widget2`, `widget3`) VALUES
-('', '', 'startpage', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0),
-('', 'Startpage', '', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0),
-('', 'Profile', 'profile', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'Login', 'login', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
-('', 'Lost Password', 'lostpassword', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
-('', 'Register', 'register', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
-('', 'Loginoverview', 'loginoverview', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'Contact', 'contact', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'Privacy Policy', 'privacy_policy', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'Imprint', 'imprint', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'Static', 'static', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'Error_404', 'error_404', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'My Profile', 'myprofile', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'report', 'report', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-('', 'Navigation Default', 'navigation_default', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0),
-('', 'Footer', 'footer', '$themes_modulname', 1, 'activated', 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1);");
+add_module_install($add_module_install = "INSERT INTO `".PREFIX."settings_module` (`pluginID`, `name`, `modulname`, `themes_modulname`, `full_activated`, `custom_activated`, `via_navigation`, `head_activated`, `content_head_activated`, `content_foot_activated`, `head_section_activated`, `foot_section_activated`, `modul_display`, `activate`, `sidebar`, `plugin_settings`, `plugin_module`, `plugin_widget`, `widget1`, `widget2`, `widget3`) VALUES
+('', 'Startpage', '', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'activated', 0, 1, 0, 0, 0, 0),
+('', '', 'startpage', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'activated', 0, 1, 0, 0, 0, 0),
+('', 'Profile', 'profile', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Login', 'login', '$themes_modulname', 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Lost Password', 'lostpassword', '$themes_modulname', 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Register', 'register', '$themes_modulname', 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Contact', 'contact', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Imprint', 'imprint', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Privacy Policy', 'privacy_policy', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Static', 'static', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Error_404', 'error_404', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'My Profile', 'myprofile', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'report', 'report', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 'activated', 0, 0, 0, 0, 0, 0),
+('', 'Navigation Default', 'navigation_default', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'activated', 1, 0, 1, 1, 0, 0),
+('', 'Footer', 'footer', '$themes_modulname', 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 'activated', 1, 0, 1, 1, 1, 1);");
 
 add_button_install($add_button_install = "INSERT INTO `".PREFIX."settings_buttons` (`buttonID`, `name`, `modulname`, `active`, `version`, `button1`, `button2`, `button3`, `button4`, `button5`, `button6`, `button7`, `button8`, `button9`, `button10`, `button11`, `button12`, `button13`, `button14`, `button15`, `button16`, `button17`, `button18`, `button19`, `button20`, `button21`, `button22`, `button23`, `button24`, `button25`, `button26`, `button27`, `button28`, `button29`, `button30`, `button31`, `button32`, `button33`, `button34`, `button35`, `button36`, `button37`, `button38`, `button39`, `button40`, `button41`, `button42`, `btn_border_radius`) VALUES
 ('', '$name', '$modulname', '$active', '$version', 'rgb(68,110,155)', 'rgb(58,94,132)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(153,153,153)', 'rgb(130,130,130)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(60,181,33)', 'rgb(51,154,28)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(205,2,0)', 'rgb(174,2,0)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(212,117,0)', 'rgb(180,99,0)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(51,153,243)', 'rgb(12,115,205)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(238,238,238)', 'rgb(202,202,202)', 'rgb(87,71,71)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(51,51,51)', 'rgb(82,82,82)', 'rgb(245,245,245)', 'rgb(170,170,170)', 'rgb(57,47,47)', 'rgb(51,153,243)', 'rgb(12,115,205)', '0px');");
 
-add_theme_install($add_theme_install = "INSERT INTO `".PREFIX."settings_themes` (`themeID`, `name`, `modulname`, `pfad`, `active`, `version`, `nav1`, `nav2`, `nav3`, `nav4`, `nav5`, `nav6`, `nav7`, `nav8`, `nav9`, `nav10`, `nav11`, `nav12`, `body1`, `body2`, `body3`, `body4`, `typo1`, `typo2`, `typo3`, `typo4`, `typo5`, `typo6`, `typo7`, `typo8`, `card1`, `card2`, `border_radius`, `foot1`, `foot2`, `foot3`, `foot4`, `foot5`, `foot6`, `calendar1`, `calendar2`, `carousel1`, `carousel2`, `carousel3`, `carousel4`, `sort`, `logo_pic`, `express_active`, `reg1`, `reg2`, `reg_pic`, `logotext1`, `logotext2`, `nav_text_alignment`, `background_pic`, `headlines`) VALUES
-('', '$name', '$modulname', '$pfad', '$active', '$version', 'rgb(80,130,188)', '16px', 'rgb(220,218,218)', 'rgb(109,148,191)', 'rgb(119,119,119)', '1px', 'rgb(220,218,218)', 'rgb(255,255,255)', '', 'rgb(109,148,191)', 'rgb(255,255,255)', 'rgb(109,148,191)', 'Default', '13px', 'rgb(255,255,255)', 'rgb(119,119,119)', '', '', '', 'rgb(51,153,243)', '', '', '', 'rgb(12,115,205)', 'rgb(255,255,255)', 'rgb(202,201,201)', '0px', 'rgb(202,202,202)', '', '', '', '', '', '', '', '', 'rgb(51,153,243)', '', 'rgb(51,153,243)', 1, 'logo.png', 0, '', 'rgb(255,255,255)', 'login_bg.jpg', '', '', 'ms-auto', '', 'headlines_01.css');");
+add_theme_install($add_theme_install = "INSERT INTO `".PREFIX."settings_themes` (`themeID`, `name`, `modulname`, `pfad`, `version`, `active`, `express_active`, `nav1`, `nav2`, `nav3`, `nav4`, `nav5`, `nav6`, `nav7`, `nav8`, `nav9`, `nav10`, `nav11`, `nav12`, `nav_text_alignment`, `body1`, `body2`, `body3`, `body4`, `body5`, `background_pic`, `border_radius`, `typo1`, `typo2`, `typo3`, `typo4`, `typo5`, `typo6`, `typo7`, `typo8`, `card1`, `card2`, `foot1`, `foot2`, `foot3`, `foot4`, `foot5`, `foot6`, `calendar1`, `calendar2`, `carousel1`, `carousel2`, `carousel3`, `carousel4`, `logo_pic`, `logotext1`, `logotext2`, `reg_pic`, `reg1`, `reg2`, `headlines`, `sort`) VALUES
+('', '$name', '$modulname', '$pfad', '$version', $active, 0, 'rgb(80,130,188)', '16px', 'rgb(220,218,218)', 'rgb(109,148,191)', 'rgb(119,119,119)', '1px', 'rgb(220,218,218)', 'rgb(255,255,255)', '', 'rgb(109,148,191)', 'rgb(255,255,255)', 'rgb(109,148,191)', 'ms-auto', 'Default', '13px', 'rgb(255,255,255)', 'rgb(119,119,119)', 'rgb(196,225,251)', '', '0px', '', '', '', 'rgb(51,153,243)', '', '', '', 'rgb(12,115,205)', 'rgb(255,255,255)', 'rgb(202,201,201)', 'rgb(202,202,202)', '', '', '', '', '', '', '', '', 'rgb(51,153,243)', '', 'rgb(51,153,243)', 'logo.png', '', '', 'login_bg.jpg', '', 'rgb(255,255,255)', 'headlines_01.css', 1);");
+
+
+
+add_navigation($add_navigation = "INSERT INTO `".PREFIX."navigation_website_sub` (`snavID`, `mnavID`, `name`, `modulname`, `url`, `sort`, `indropdown`, `themes_modulname`) VALUES
+('', 6, '{[de]}Kontakt{[en]}Contact{[it]}Contatti', 'contact', 'index.php?site=contact', 1, 1, '$themes_modulname'),
+('', 6, '{[de]}Datenschutz-Bestimmungen{[en]}Privacy Policy{[it]}Informativa sulla privacy', 'privacy_policy', 'index.php?site=privacy_policy', 2, 1, '$themes_modulname'),
+('', 6, '{[de]}Impressum{[en]}Imprint{[it]}Impronta Editoriale', 'imprint', 'index.php?site=imprint', 3, 1, '$themes_modulname');");
 
 #######################################################################################################################################
 
