@@ -3,8 +3,7 @@
 			{
 				"index": "php",
 				"file1": "simplex/install.php",				
-				"file2": "simplex/uninstall.php",
-				"file3": "simplex/index.php"
+				"file2": "simplex/uninstall.php"
 			},
 			{
 				"index": "admin"
@@ -13,23 +12,7 @@
 				"index": "languages"
 			},
 			{
-				"index": "templates",
-				"file1": "simplex/templates/checklogin.html",
-				"file2": "simplex/templates/contact.html",
-				"file3": "simplex/templates/error_404.html",
-				"file4": "simplex/templates/favicon.ico",
-				"file5": "simplex/templates/imprint.html",
-				"file6": "simplex/templates/logged.html",
-				"file7": "simplex/templates/login.html",
-				"file8": "simplex/templates/lostpassword.html",
-				"file9": "simplex/templates/myprofile.html",
-				"file10": "simplex/templates/navigation.html",
-				"file11": "simplex/templates/navigation_login.php",
-				"file12": "simplex/templates/privacy_policy.html",
-				"file13": "simplex/templates/profile.html",
-				"file14": "simplex/templates/register.html",
-				"file15": "simplex/templates/startpage.html",
-				"file16": "simplex/templates/static.html"
+				"index": "templates"
 			},
 			{
 				"index": "css",
@@ -37,12 +20,11 @@
 			},
 			{
 				"index": "images",
-				"file1": "simplex/images/logo.png",
+				"file1": "simplex/images/simplex_logo.png",
 				"file2": "simplex/images/simplex.jpg",
-				"file3": "simplex/images/login_bg.jpg",
-				"file4": "simplex/images/eye.svg",
-				"file5": "simplex/images/logo-signup.png",
-				"file6": "simplex/images/no_background.png"
+				"file3": "simplex/images/simplex_login_bg.jpg",
+				"file4": "simplex/images/favicon.ico",
+				"file5": "simplex/images/no_background.png"
 			},
 			{
 				"index": "js"

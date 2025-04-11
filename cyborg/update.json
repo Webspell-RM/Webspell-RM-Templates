@@ -4,8 +4,7 @@
 				"index": "php",
 				"file1": "cyborg/install.php",				
 				"file2": "cyborg/uninstall.php",
-				"file3": "cyborg/index.php",
-				"file4": "cyborg/update.php"
+				"file3": "cyborg/update.php"
 			},
 			{
 				"index": "admin"
@@ -17,10 +16,16 @@
 				"index": "templates"
 			},
 			{
-				"index": "css"
+				"index": "css",
+				"file1": "cyborg/css/stylesheet.css"
 			},
 			{
-				"index": "images"
+				"index": "images",
+				"file1": "cyborg/images/cyborg.jpg",
+				"file2": "cyborg/images/cyborg_login_bg.jpg",
+				"file3": "cyborg/images/cyborg_logo.png",
+				"file4": "cyborg/images/favicon.ico",
+				"file5": "cyborg/images/no_background.png"
 			},
 			{
 				"index": "js"

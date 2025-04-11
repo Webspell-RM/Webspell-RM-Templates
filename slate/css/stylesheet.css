@@ -2,6 +2,15 @@
 .logo .bg-primary {
 background-color: transparent !important;
 }
+/* =================================
+------------------------------------
+  Webspell-RM Template
+------------------------------------ 
+====================================*/
 
+.navbar li {
+  border-right: 0px solid rgba(255, 255, 255, 0.125) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.125) !important;
+}
 
 

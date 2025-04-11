@@ -4,8 +4,7 @@
 				"index": "php",
 				"file1": "slate/install.php",				
 				"file2": "slate/uninstall.php",
-				"file3": "slate/index.php",
-				"file4": "slate/update.php"
+				"file3": "slate/update.php"
 			},
 			{
 				"index": "admin"
@@ -17,10 +16,16 @@
 				"index": "templates"
 			},
 			{
-				"index": "css"		
+				"index": "css",
+				"file1": "slate/css/stylesheet.css"			
 			},
 			{
-				"index": "images"
+				"index": "images",
+				"file1": "slate/images/slate_logo.png",
+				"file2": "slate/images/slate.jpg",
+				"file3": "slate/images/slate_login_bg.jpg",
+				"file4": "slate/images/favicon.ico",
+				"file5": "slate/images/no_background.png"
 			},
 			{				
 				"index": "js"

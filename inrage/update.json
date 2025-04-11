@@ -4,8 +4,7 @@
 				"index": "php",
 				"file1": "inrage/install.php",				
 				"file2": "inrage/uninstall.php",
-				"file3": "inrage/index.php",
-				"file4": "inrage/update.php"
+				"file3": "inrage/update.php"
 			},
 			{
 				"index": "admin"
@@ -17,10 +16,16 @@
 				"index": "templates"
 			},
 			{
-				"index": "css"
+				"index": "css",
+				"file1": "inrage/css/stylesheet.css"
 			},
 			{
-				"index": "images"
+				"index": "images",
+				"file1": "inrage/images/inrage.jpg",
+				"file2": "inrage/images/inrage_login_bg.jpg",
+				"file3": "inrage/images/inrage_logo.png",
+				"file4": "inrage/images/favicon.ico",
+				"file5": "inrage/images/no_background.png"
 			},
 			{
 				"index": "js"

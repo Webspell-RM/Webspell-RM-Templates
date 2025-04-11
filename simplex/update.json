@@ -4,8 +4,7 @@
 				"index": "php",
 				"file1": "simplex/install.php",				
 				"file2": "simplex/uninstall.php",
-				"file3": "simplex/index.php",
-				"file4": "simplex/update.php"
+				"file3": "simplex/update.php"
 			},
 			{
 				"index": "admin"
@@ -17,10 +16,16 @@
 				"index": "templates"
 			},
 			{
-				"index": "css"
+				"index": "css",
+				"file1": "simplex/css/stylesheet.css"
 			},
 			{
-				"index": "images"
+				"index": "images",
+				"file1": "simplex/images/simplex_logo.png",
+				"file2": "simplex/images/simplex.jpg",
+				"file3": "simplex/images/simplex_login_bg.jpg",
+				"file4": "simplex/images/favicon.ico",
+				"file5": "simplex/images/no_background.png"
 			},
 			{
 				"index": "js"

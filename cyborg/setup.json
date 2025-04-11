@@ -3,8 +3,7 @@
 			{
 				"index": "php",
 				"file1": "cyborg/install.php",				
-				"file2": "cyborg/uninstall.php",
-				"file3": "cyborg/index.php"
+				"file2": "cyborg/uninstall.php"
 			},
 			{
 				"index": "admin"
@@ -13,23 +12,7 @@
 				"index": "languages"
 			},
 			{
-				"index": "templates",
-				"file1": "cyborg/templates/checklogin.html",
-				"file2": "cyborg/templates/contact.html",
-				"file3": "cyborg/templates/error_404.html",
-				"file4": "cyborg/templates/favicon.ico",
-				"file5": "cyborg/templates/imprint.html",
-				"file6": "cyborg/templates/logged.html",
-				"file7": "cyborg/templates/login.html",
-				"file8": "cyborg/templates/lostpassword.html",
-				"file9": "cyborg/templates/myprofile.html",
-				"file10": "cyborg/templates/navigation.html",
-				"file11": "cyborg/templates/navigation_login.php",
-				"file12": "cyborg/templates/privacy_policy.html",
-				"file13": "cyborg/templates/profile.html",
-				"file14": "cyborg/templates/register.html",
-				"file15": "cyborg/templates/startpage.html",
-				"file16": "cyborg/templates/static.html"
+				"index": "templates"
 			},
 			{
 				"index": "css",
@@ -37,12 +20,11 @@
 			},
 			{
 				"index": "images",
-				"file1": "cyborg/images/logo.png",
-				"file2": "cyborg/images/cyborg.jpg",
-				"file3": "cyborg/images/login_bg.jpg",
-				"file4": "cyborg/images/eye.svg",
-				"file5": "cyborg/images/logo-signup.png",
-				"file6": "cyborg/images/no_background.png"
+				"file1": "cyborg/images/cyborg.jpg",
+				"file2": "cyborg/images/cyborg_login_bg.jpg",
+				"file3": "cyborg/images/cyborg_logo.png",
+				"file4": "cyborg/images/favicon.ico",
+				"file5": "cyborg/images/no_background.png"
 			},
 			{
 				"index": "js"

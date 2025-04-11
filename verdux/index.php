@@ -63,7 +63,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
     <!-- Bootstrap CSS -->
     <?php
-         
+         $lang = $_language->language; // Language Variable setzen 
         /* Components & themes css */
         echo $components_css;
         echo $theme_css;
@@ -106,10 +106,11 @@ header('X-UA-Compatible: IE=edge,chrome=1');
      <!-- navigation & slider -->
     <div class="container">
       <div class="card header">
-          <?php if (!in_array($site, $hide9)) {echo get_via_navigation_modul();}?> 
+        <?php echo get_lock_modul();?>
+        <?php if (!in_array($site, $hide9)) {echo get_via_navigation_modul();}?> 
         <!-- Navigation Modul --> 
         <?php echo get_navigation_modul();?>    
-        <?php echo get_lock_modul();?>
+        
         <?php echo get_head_modul();?>
         <?php echo get_headelements();?>
      </div>
@@ -213,11 +214,11 @@ header('X-UA-Compatible: IE=edge,chrome=1');
              Video Area
              <span>in motion</span>
            </h5>
-           <div class="gallery">
+           <div class="gal1lery">
            <?php 
               $dx = mysqli_fetch_array(safe_query("SELECT * FROM " . PREFIX . "settings_plugins WHERE modulname='videos'"));
                 if (@$dx[ 'modulname' ] != 'videos') {
-                $test = '';
+                #$test = '';
                 } else {
                   get_widget('videos','plugin_widget3');
                 };
@@ -230,11 +231,11 @@ header('X-UA-Compatible: IE=edge,chrome=1');
              Gallery
              <span>our best pictures</span>
            </h5>
-           <div class="gallery">
+           <div class="gal1lery">
            <?php 
         $dx = mysqli_fetch_array(safe_query("SELECT * FROM " . PREFIX . "settings_plugins WHERE modulname='gallery'"));
                     if (@$dx[ 'modulname' ] != 'gallery') {
-                    $test = '';
+                    #$test = '';
                     } else {
                       get_widget('gallery','plugin_widget1');
                     };

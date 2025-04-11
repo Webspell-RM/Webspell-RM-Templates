@@ -28,8 +28,6 @@ include("../system/func/plugin_installer.php");
 
 $name = $_GET[ 'modulname' ];
 // Name Tabelle | Where Klause | ID name
-DeleteData("settings_themes","modulname",$name);
-DeleteData("settings_module","themes_modulname",$name);
-DeleteData("settings_widgets","themes_modulname",$name);
+DeleteData("settings_expansion","modulname",$name);
 DeleteData("settings_buttons","modulname",$name);
 ?>

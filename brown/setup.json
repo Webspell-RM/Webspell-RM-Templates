@@ -1,0 +1,33 @@
+{
+"items": [
+			{
+				"index": "php",
+				"file1": "brown/install.php",				
+				"file2": "brown/uninstall.php"
+			},
+			{
+				"index": "admin"
+			},
+			{
+				"index": "languages"
+			},
+			{
+				"index": "templates"
+			},
+			{
+				"index": "css",
+				"file1": "brown/css/stylesheet.css"
+			},
+			{
+				"index": "images",
+				"file1": "brown/images/brown.jpg",
+				"file2": "brown/images/brown_login_bg.jpg",
+				"file3": "brown/images/brown_logo.png",
+				"file4": "brown/images/favicon.ico",
+				"file5": "brown/images/no_background.png"
+			},
+			{
+				"index": "js"
+			}
+		]
+}
